@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Comparator;
 import java.util.Arrays;
 
-class GFG implements Comparator<String>{
+class Comp implements Comparator<String>{
     
     public int compare(String str1,String str2)
 	{
@@ -167,7 +167,7 @@ class GFG implements Comparator<String>{
     
 public static void main (String[] args)
 	{
-	    GFG test=new GFG();
+	   Comp test=Comp GFG();
 	    
 	    // ex of problem statement
         System.out.println(test.compare("1 2 10", "1 10 2") < 0);
