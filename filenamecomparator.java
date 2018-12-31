@@ -77,7 +77,7 @@ class Comp implements Comparator<String>
 				    
 				/*
 				   Condition : If one of the char in the strings is neither a digit 
-				                  or english alphabet i.e special chars like "+,/, ,*".
+				                  nor a english alphabet i.e special chars like "+,/, ,*".
 				                  The one containing the special chars is always smaller
 				*/
 				if(isdigorchar(a) && !isdigorchar(b))
@@ -178,8 +178,8 @@ class Comp implements Comparator<String>
 	    
 	 // ex of problem statement
         	System.out.println(test.compare("1 2 10", "1 10 2") < 0);
+		System.out.println(test.compare("1/5", "1/20") < 0);
         	System.out.println(test.compare("1210", "1102") > 0);
-        	System.out.println(test.compare("1/5", "1/20") < 0);
         	System.out.println(test.compare("-5", "-4") > 0);
         	System.out.println(test.compare("text2", "text10") < 0);
         	System.out.println(test.compare("text2", "text1") > 0);
@@ -219,7 +219,7 @@ class Comp implements Comparator<String>
         	System.out.println(test.compare(null, null) == 0);
         
        //check for large strings
-        	System.out.println(test.compare("kloh1234566666666888888888888876543234565", "kloh12345666677777778765")> 0);
+        	System.out.println(test.compare("kloh123456666666688888888888882345678902345672345672345672345676543234565", "kloh12345666677777734567898762345678765")> 0);
         
         //checking for miscellaneous cases
         	System.out.println(test.compare("kloh300t", "kloh500")<0);
