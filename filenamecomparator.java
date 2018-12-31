@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Comparator;
 import java.util.Arrays;
 
-class Comp implements Comparator<String>
+public class Comp implements Comparator<String>
 {
    public int compare(String str1,String str2)
    {
